@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>cmp-order-webpage</title>
+  
+</head>
+<body>
+    <header>
+        <div class="upper-header">
+        <div class="container">
+            <div class="row">
+                
+                    <div class="col-lg-4">
+                        <div class="logo">
+                            <img src="/image/cpm.png" class="img-responsive"  alt="">
+                            <h5><span><i class="fa fa-folder-open-o"></i></span> HOMEWORK HELP <span><i class="fa fa-folder-open-o"></i></span></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="up-right">
+                            <div class="bar">
+                                <h4>email</h4>
+                                <h4><a href="">info@cpmhomeworkhelp.net</a></h4>
+                            </div>
+                            <div class="bar">
+                                    <h4>tol free</h4>
+                                    <h4><a href="">TFN Here</a></h4>
+                            </div>
+                            <div class="bar-btn">
+                                <div id="demo">
+                                <button onclick="myFunction()">login</button>
+                                </div>
+                                <a href="#" class="btn btn-primary">order now<i class="fa fa-play-circle-o"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+          <div class="new-menu">
+          <nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+       <a class="navbar-brand" href="#">home</a>
+      </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">contact</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">about <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">our courses</a></li>
+        <li><a href="#">search</a></li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+</div>
+    </header>
+
+<div class="form-heading">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <h2>Fill the form to place your now!</h2>
+            <p>Have an assignment in mind? Share the details by filling in the order form &
+                <br> we'll start working on it right away!</p>
+        </div>
+    </div>
+</div>    
+</div>
+<div class="form-feature">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-7">
+            <div class="column-main">
+                <div class="form-head">
+                <h4>Place your order</h4>
+            </div>
+                <form action="" class="form">
+                    <div class="form-group col-sm-6">
+                        <label for="email">Enter Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <label for="deadline">Choose deadline</label>
+                        <input type="datetime" class="form-control" id="email" placeholder="2022-12-22 08:00PM">
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <label for="subject">Enter subject</label>
+                        <input type="text" class="form-control" id="email" placeholder="Accounting">
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <label for="email">No. of pages/words</label>
+                        <input type="number" class="form-control" placeholder="pages/words" id="counting">
+                        <button class="btn plus-btn" onclick="increment()">+</button>
+                        <button class="btn minus-btn" onclick="decrement()">-</button>
+                    </div>
+                      <div class="form-group col-sm-6">
+                        <label for="email">Reference style</label>
+                        <input type="email" class="form-control" id="email" placeholder="select reference style">
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <label for="email">cupon code</label>
+                        <input type="text" class="form-control" id="email" placeholder="Enter cupon code">
+                      </div>
+                      <div class="form-group">
+                        <label for="comments">Enter description </label>
+                        <textarea type="textarea" class="form-control" id="email" placeholder="Write assignment description"></textarea>
+                      </div>
+
+                     <!-- <div class="form-btn">
+                      <button class="btn btn-default" name="file" type="file" accept="image/jpeg,image/gif,image/png,application/pdf,image/x-eps" id="file" multiple> Upload File </button>
+                      <input type="submit" class="submit" name="submit" value="Submit" required>
+
+                      </div>-->
+                      <div class="mb-3">
+                        <label for="formFile" class="form-label"></label>
+                        <input class="form-control" type="file" id="formFile">
+                        <input type="submit" class="submit" name="submit" value="Submit" required>
+                      </div>
+                      <div class="uploaded-flies">
+                          <div class="flie-bar">
+                              <h4>cpm.homeworkhelp(1).png</h4>
+                              <i class="fa fa-times-circle"></i>
+                          </div>
+                          <div class="flie-bar">
+                            <h4>cpm.homeworkhelp(1).png</h4>
+                            <i class="fa fa-times-circle"></i>
+                        </div>
+                        <div class="flie-bar">
+                            <h4>cpm.homeworkhelp(1).png</h4>
+                            <i class="fa fa-times-circle"></i>
+                        </div>
+                        <div class="flie-bar">
+                            <h4>cpm.homeworkhelp(1).png</h4>
+                            <i class="fa fa-times-circle"></i>
+                        </div>
+                        <div class="flie-bar">
+                            <h4>cpm.homeworkhelp(1).png</h4>
+                            <i class="fa fa-times-circle"></i>
+                        </div>
+                      </div>
+                </form>
+
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <div class="column-main">
+                <div class="form-head">
+                    <h4>features</h4>
+                </div>
+                    <div class="feature-head">
+                    <h5><span>30,000+</span> Students can't be wrong!</h5>
+                        </div>
+                        <div class="feature-subject">
+                            <div class="feature-image">
+                                <div class="image-icon">
+                                <img src="/image/upper1.png" alt="" class="img-responsive">
+                                </div>
+                                <div class="feature-text">
+                                    <span>93940</span>
+                                    <h6>orders</h6>
+                               </div>
+                               </div>
+
+                               <div class="feature-image">
+                                <div class="image-icon">
+                                <img src="/image/upper2.png" alt="" class="img-responsive">
+                                </div>
+                                <div class="feature-text">
+                                    <span>9394</span>
+                                    <h6>experts</h6>
+                               </div>
+                               </div>
+
+                               <div class="feature-image">
+                                <div class="image-icon">
+                                <img src="/image/upper3.png" alt="" class="img-responsive">
+                                </div>
+                                <div class="feature-text">
+                                    <span>5/45</span>
+                                    <h6>ratings</h6>
+                               </div>
+                               </div>
+                            </div>
+
+                                    <div class="offer">
+                                        <div class="offer-content">
+                                    <div class="offer-head">
+                                        <h1>10% off</h1>
+                                        <h4>your first order</h4>
+                                    </div>
+                                    <div class="offer-cupon">
+                                        <form>
+                                            <label for="country_code">Cupon code:</label>
+                                            <button type="text" id="country_code" name="country_code">firstorder01</button>
+                                          </form>
+                                    </div>
+                                    </div>
+                                </div>
+                <div class="student-review">
+                    <div class="review-head">
+                        <h3>student review</h3>
+                        </div>
+                        <div class="review">
+                            <div class="admin">
+                                <h4><img src="/image/pooja.png" alt="" class="img-responsive"> Kristhi</h4>
+                            </div>
+                                <h3>April 05, 2021 </h3><br><img src="/image/five-stars.png" alt="" class="img-responsive"> 
+                            </div>
+                        <div class="review-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
+                                \Quos, exercitationem? Laudantium suscipit amet maiores <br> 
+                                rerum perferendis ratione ducimus velit sunt quo? Enim <br>
+                                 consectetur dolor nisi eum deleniti commodi quod hic 
+                                <br>ad aut et cupiditate, quasi sint, quas earum in illo.</p>
+                        </div>
+                </div>
+                <div class="guarantee-sec">
+                    <div class="guarantee-stamp">
+                        <img src="/image/r1_b.png"  class="img-responsive">
+                        <img src="/image/r2_b.png" class="img-responsive">
+                    </div>
+                    <div class="guarantee-text">
+                        <h3>100% Secure Payment</h3>
+                    </div>
+                </div>
+                
+
+    </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+    <section class="toggle">
+        <div class="container">
+            <div class="toggle_head">
+                <h2>My dashboard</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="list_table">
+                        <div class="list">
+                            <ul>
+                                <li class="active"><a href="#one" data-toggle="tab">unpaid <span>(1)</span></a></li>
+                                <li><a href="#two" data-toggle="tab">inprogress<span>(1)</span></a></li>
+                                <li><a href="#three" data-toggle="tab">completed<span>(1)</span></a></li>
+                                <li><a href="#four" data-toggle="tab">cancelled<span>(0)</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row row1">
+                        <div class="tab-content">
+                            <div class="total_cont tab-pane fade in active" id="one">
+                                <div class="col-lg-8 list_col">
+                                    <div class="list_toggle">
+                                        <p class="text-dark"><b>AP25461DHZ45646</b> <span>(NEW)</span></p>
+                                        <p class="text-dark"><b>Subject</b>: Accounting / <b>Deadline </b> : Jan 11,
+                                            2023 21:00
+                                            PM</p>
+                                        <p class="text-dark"><b>Subject</b>: Awaiting / <b>offers </b> : N/A</p>
+                                        <p><i class="fa fa-envelope"></i> Send message</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="btn">
+                                        <a href="#" class="btn btn-primary">Chat Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="total_cont tab-pane fade"  id="two">
+                                <div class="col-lg-8 list_col">
+                                    <div class="list_toggle">
+                                        <p class="text-dark"><b>AP25461DHZ45646</b> <span>(NEW)</span></p>
+                                        <p class="text-dark"><b>Subject</b>: Accounting / <b>Deadline </b> : Jan 11,
+                                            2023 21:00
+                                            PM</p>
+                                        <p class="text-dark"><b>Subject</b>: Awaiting / <b>offers </b> : N/A</p>
+                                        <p><i class="fa fa-envelope"></i> Send message</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="btn">
+                                        <a href="#" class="btn btn-primary">for chat now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="total_cont tab-pane fade"  id="three">
+                                <div class="col-lg-8 list_col">
+                                    <div class="list_toggle">
+                                        <p class="text-dark"><b>AP25461DHZ45646</b> <span>(NEW)</span></p>
+                                        <p class="text-dark"><b>Subject</b>: Accounting / <b>Deadline </b> : Jan 11,
+                                            2023 21:00
+                                            PM</p>
+                                        <p class="text-dark"><b>Subject</b>: Awaiting / <b>offers </b> : N/A</p>
+                                        <p><i class="fa fa-envelope"></i> Send message</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="btn">
+                                        <a href="#" class="btn btn-primary">Chat Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="total_cont tab-pane fade"  id="four" style="opacity: 0;">
+                                <div class="col-lg-8 list_col">
+                                    <div class="list_toggle">
+                                        <p class="text-dark"><b>AP25461DHZ45646</b> <span>(NEW)</span></p>
+                                        <p class="text-dark"><b>Subject</b>: Accounting / <b>Deadline </b> : Jan 11,
+                                            2023 21:00
+                                            PM</p>
+                                        <p class="text-dark"><b>Subject</b>: Awaiting / <b>offers </b> : N/A</p>
+                                        <p><i class="fa fa-envelope"></i> Send message</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="btn">
+                                        <a href="#" class="btn btn-primary">Chat Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        function myFunction() {
+          var txt;
+          if (confirm("you will get notification in 10 min!")) {
+            txt = "You pressed OK!";
+          } else {
+            txt = "You pressed Cancel!";
+          }
+          document.getElementById("demo").innerHTML = txt;
+        }
+        </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
